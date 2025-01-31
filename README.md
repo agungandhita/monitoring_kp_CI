@@ -14,39 +14,34 @@ More information about the plans for version 4 can be found in [CodeIgniter 4](h
 You can read the [user guide](https://codeigniter.com/user_guide/)
 corresponding to the latest version of the framework.
 
-## Installation & updates
+## cara install composer dan php
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
+`sebelum menggunakan pastikan sudah menginstall composer dan php terlebih dahulu
 
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
+untuk mendownload composer dan php silahkan klik link berikut
+[https://getcomposer.org/download/](https://getcomposer.org/download/)
+
+untuk mendownload php silahkan klik link berikut
+[https://www.php.net/downloads](https://www.php.net/downloads)
 
 ## Setup
+setelah itu jalankan perintah git clone 
+https://github.com/agungandhita/monitoring_kp_CI.git untuk menginstall aplikasi
 
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
+setelah selesai clon maka jalankan perintah 
+Copy `env` to `.env`
 
-## Important Change with index.php
+untuk menjalan aplikasi jalankan perintah
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+'php spark serve'
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+## Teknologi dan Server
 
-**Please** read the user guide for a better explanation of how CI4 works!
+Teknologi:
+- Framework: CodeIgniter 4
+- Database: MySQL
+- Frontend: Bootstrap 5.2.3
 
-## Repository Management
-
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
-
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
 
 ## Server Requirements
 
